@@ -13,7 +13,6 @@ const initialState: {
   squareBeingDragged: undefined,
   squareBeingReplaced: undefined,
 };
-
 const candyCrushSlice = createSlice({
   name: "candyCrush",
   initialState,
@@ -31,7 +30,6 @@ const candyCrushSlice = createSlice({
     moveBelow: moveBelowReducer,
   },
 });
-
 export const store = configureStore({
   reducer: {
     candyCrush: candyCrushSlice.reducer,
