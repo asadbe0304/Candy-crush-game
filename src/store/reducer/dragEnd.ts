@@ -52,7 +52,7 @@ export const dragEndReducer = (
 
   const isARowOfFour: boolean | undefined = checkForRowOfFour(
     newBoard,
-    boardSize,
+    boardSize,  
     generateInvalidMoves(boardSize, true)
   );
 

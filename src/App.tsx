@@ -22,6 +22,8 @@ function App() {
     ({ candyCrush: { boardSize } }) => boardSize
   );
 
+
+
   useEffect(() => {
     dispatch(updateBoard(createBoard(boardSize)));
   }, [dispatch, boardSize]);
@@ -48,9 +50,11 @@ function App() {
   }, [board, dispatch, boardSize]);
 
   return (
-    <div className='flex justify-center items-center py-10'>
-      <Board />
-    </div>
+    <>
+      <div className='flex justify-center items-center py-10'>
+        <Board />
+      </div>
+    </>
   );
 };
 
